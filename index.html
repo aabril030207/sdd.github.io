@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SDD</title>
+    <title>Información del Usuario</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f4f8;
             color: #333;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -20,8 +20,8 @@
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 800px;
+            width: 80%;
+            max-width: 600px;
             padding: 20px;
             box-sizing: border-box;
         }
@@ -32,12 +32,9 @@
         .header h1 {
             margin: 0;
             color: #0066cc;
-            font-size: 2em;
         }
         .info {
             margin-bottom: 10px;
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
         }
         .info label {
             font-weight: bold;
@@ -45,33 +42,15 @@
         .info p {
             margin: 5px 0;
         }
-        .info-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        .info-table th, .info-table td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        .info-table th {
-            background-color: #f4f4f4;
-            font-weight: bold;
-        }
-        .info-list ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        .info-list li {
-            margin-bottom: 5px;
+        .info:nth-child(odd) {
+            background-color: #f9f9f9;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>SDD</h1>
+            <h1>Información del Usuario</h1>
         </div>
         <div class="info">
             <label>Nombre:</label>
@@ -104,44 +83,6 @@
         <div class="info">
             <label>Medicamentos:</label>
             <p>Lisinopril</p>
-        </div>
-        <div class="info">
-            <label>Historia Familiar:</label>
-            <div class="info-list">
-                <ul>
-                    <li>Diabetes</li>
-                    <li>Enfermedad cardíaca</li>
-                </ul>
-            </div>
-        </div>
-        <div class="info">
-            <label>Resultados de Laboratorio:</label>
-            <table class="info-table">
-                <tr>
-                    <th>Fecha</th>
-                    <th>Prueba</th>
-                    <th>Resultado</th>
-                    <th>Rango Normal</th>
-                </tr>
-                <tr>
-                    <td>01/03/2024</td>
-                    <td>Colesterol</td>
-                    <td>190 mg/dL</td>
-                    <td>125-200 mg/dL</td>
-                </tr>
-                <tr>
-                    <td>01/03/2024</td>
-                    <td>Glucosa</td>
-                    <td>90 mg/dL</td>
-                    <td>70-100 mg/dL</td>
-                </tr>
-                <tr>
-                    <td>01/03/2024</td>
-                    <td>Presión Arterial</td>
-                    <td>130/85 mmHg</td>
-                    <td>120/80 mmHg</td>
-                </tr>
-            </table>
         </div>
         <div class="info">
             <label>Notas Adicionales:</label>
