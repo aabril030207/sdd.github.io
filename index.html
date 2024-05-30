@@ -45,6 +45,27 @@
         .info:nth-child(odd) {
             background-color: #f9f9f9;
         }
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .info-table th, .info-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .info-table th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+        .info-list ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .info-list li {
+            margin-bottom: 5px;
+        }
     </style>
 </head>
 <body>
@@ -87,6 +108,44 @@
         <div class="info">
             <label>Notas Adicionales:</label>
             <p>Visita al cardiólogo cada 6 meses</p>
+        </div>
+        <div class="info">
+            <label>Historia Familiar:</label>
+            <div class="info-list">
+                <ul>
+                    <li>Diabetes</li>
+                    <li>Enfermedad cardíaca</li>
+                </ul>
+            </div>
+        </div>
+        <div class="info">
+            <label>Resultados de Laboratorio:</label>
+            <table class="info-table">
+                <tr>
+                    <th>Fecha</th>
+                    <th>Prueba</th>
+                    <th>Resultado</th>
+                    <th>Rango Normal</th>
+                </tr>
+                <tr>
+                    <td>01/03/2024</td>
+                    <td>Colesterol</td>
+                    <td>190 mg/dL</td>
+                    <td>125-200 mg/dL</td>
+                </tr>
+                <tr>
+                    <td>01/03/2024</td>
+                    <td>Glucosa</td>
+                    <td>90 mg/dL</td>
+                    <td>70-100 mg/dL</td>
+                </tr>
+                <tr>
+                    <td>01/03/2024</td>
+                    <td>Presión Arterial</td>
+                    <td>130/85 mmHg</td>
+                    <td>120/80 mmHg</td>
+                </tr>
+            </table>
         </div>
     </div>
 </body>
