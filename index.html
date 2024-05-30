@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Información del Usuario</title>
+    <title>SDD</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,16 +13,18 @@
             padding: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
+            align-items: flex-start;
+            min-height: 100vh;
+            box-sizing: border-box;
         }
         .container {
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 600px;
+            width: 100%;
+            max-width: 800px;
             padding: 20px;
+            margin: 20px;
             box-sizing: border-box;
         }
         .header {
@@ -32,18 +34,18 @@
         .header h1 {
             margin: 0;
             color: #0066cc;
+            font-size: 2em;
         }
         .info {
             margin-bottom: 10px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
         }
         .info label {
             font-weight: bold;
         }
         .info p {
             margin: 5px 0;
-        }
-        .info:nth-child(odd) {
-            background-color: #f9f9f9;
         }
         .info-table {
             width: 100%;
@@ -71,7 +73,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Información del Usuario</h1>
+            <h1>SDD</h1>
         </div>
         <div class="info">
             <label>Nombre:</label>
@@ -104,10 +106,6 @@
         <div class="info">
             <label>Medicamentos:</label>
             <p>Lisinopril</p>
-        </div>
-        <div class="info">
-            <label>Notas Adicionales:</label>
-            <p>Visita al cardiólogo cada 6 meses</p>
         </div>
         <div class="info">
             <label>Historia Familiar:</label>
@@ -146,6 +144,10 @@
                     <td>120/80 mmHg</td>
                 </tr>
             </table>
+        </div>
+        <div class="info">
+            <label>Notas Adicionales:</label>
+            <p>Visita al cardiólogo cada 6 meses</p>
         </div>
     </div>
 </body>
