@@ -1,12 +1,93 @@
- <!DOCTYPE html>
-<HTML>
-  <head>
-    <title>Mi primer WEB</title>
-  </head>
-  <body>
-    <div id="una capa">
-      <h1>Hola mundo!</h1>
-      <p>Este es un ejemplo del uso de HTML para crear un documento web que nuestro navegador es capaz de interpretar.</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información del Usuario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            color: #0066cc;
+        }
+        .info {
+            margin-bottom: 10px;
+        }
+        .info label {
+            font-weight: bold;
+        }
+        .info p {
+            margin: 5px 0;
+        }
+        .info:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Información del Usuario</h1>
+        </div>
+        <div class="info">
+            <label>Nombre:</label>
+            <p>Juan Pérez</p>
+        </div>
+        <div class="info">
+            <label>Edad:</label>
+            <p>35 años</p>
+        </div>
+        <div class="info">
+            <label>Altura:</label>
+            <p>1.75 m</p>
+        </div>
+        <div class="info">
+            <label>Peso:</label>
+            <p>70 kg</p>
+        </div>
+        <div class="info">
+            <label>Tipo de Sangre:</label>
+            <p>O+</p>
+        </div>
+        <div class="info">
+            <label>Alergias:</label>
+            <p>Ninguna</p>
+        </div>
+        <div class="info">
+            <label>Condiciones Médicas:</label>
+            <p>Hipertensión</p>
+        </div>
+        <div class="info">
+            <label>Medicamentos:</label>
+            <p>Lisinopril</p>
+        </div>
+        <div class="info">
+            <label>Notas Adicionales:</label>
+            <p>Visita al cardiólogo cada 6 meses</p>
+        </div>
     </div>
-  </body>  
-</HTML>
+</body>
+</html>
